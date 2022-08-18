@@ -1,0 +1,31 @@
+En esta materia vamos a aprender a volver interactivas nuestras páginas webs
+Nos vamos a centrar en lenguaje de JavaScript
+
+Distribución por capas
+1 --- HTML, ESQUELETO.
+2 --- Styles, hoja donde se aplican los stylos.
+3 ---- Script, dónde le damos interactividad al documento. 
+Se recomienda siemore trabajar cada capa en distintos archivos y vincularlos a nuestro archivo principal.
+
+LET Y VAR 
+Son variables, pero tienen distinto scope.
+Var era muy usada, let es más actual. 
+
+
+Vamos a trabajar también con la consola del navegador, una herramienta que nos va a ser de utilidad para debuggear código.
+
+Hay diferentes tipos de console
+.table ==> Muestra en forma de tabla
+.error ==> Error
+.warn ==> Advertencia
+
+Como en todo lenguaje existen diferentes tipos de datos en JavaScript
+- Numericos
+- Booleanos
+- Strings
+- Arrays
+- Objetos
+con typeOff podemos ver que tipo de dato hay almacenado en una varibale
+
+Condicionales ==> If, while, etc.
+Ciclos ==> for
