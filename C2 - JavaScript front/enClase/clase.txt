@@ -1,0 +1,71 @@
+Clase 02 --- Introducción a JavaScript front
+
+Pedir datos al usuario 
+
+alert ==> Recibe un parametro, puede ser un mensaje, una variable, etc.
+alert("Bienvenido");
+Alert detiene toda la ejecución del programa. 
+No retorna ningun valor
+
+Confim 
+Pide alguna opción y retorna un valor booleano
+console.log(  confirm('Validar') );
+Confirm también detiene la ejecución del programa
+
+Bucle while
+------- false || true ----- 
+while( confirm('Juegar?)){
+    console.log('Aceptó jugar')
+}
+
+Función prompt ==> Recibe un string y luego lo muestra por pantalla. Retorna el valor que ingresamos en forma de String
+prompt('¿Cómo estás?)
+let nombre = prompt('Ingrese su nombre');
+
+Librería Math 
+Es un objeto que tiene sus métodos y propiedades.
+Tiene diferentes funciones, como generar un numero random, darnos el valor de PI, de una raiz cuadrada, entre otras.
+Math.PI ===> Devuelve el valor de PI
+
+Ejemplo de uso con metodo round
+Este método devuelve un numero redondeado al entero más cercano
+Juego de dados 
+let numeroRandom;
+            false ||  true
+    while(   confirm('¿Jugar?')   ){
+    numeroRandom = Math.round(Math.random() * (6 - 1) + 1 ); 
+    alert('El dado dio ' + numeroRandom);
+    console.log('número ' + numeroRandom);
+}
+
+ParseInt ==> toma un String como paramétro y retorna ese valor como numérico
+
+let dia = parseInt( prompt('Ingrese el número del día') );
+console.log(dia, typeof(dia));
+
+ */
+
+Bucles específicos 
+for... in ==> Itera sobre un objeto iterable, obteniendo las propiedades.
+let gato = {
+    nombre: 'Mei',
+    color: 'Blanco',
+    edad: 7,
+}
+
+for(const propiedad in gato){
+    console.log(propiedad)
+}
+
+Si quiero acceder al valor de cada propiedad
+for(const propiedad in gato){
+    console.log(propiedad)
+    console.log(gato[propiedad])
+}
+
+También podemos iterar sobre arrays
+Podemos usar un for... of ==> Carga el objeto en sí
+
+--- Ejercitación del día ---
+Programar el juego de piedra, papel y tijera
+

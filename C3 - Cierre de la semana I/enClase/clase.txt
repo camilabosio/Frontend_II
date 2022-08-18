@@ -1,0 +1,30 @@
+--- Clase 03, integración de contenidos
+
+¿Cómo hacer un programa que genere un número random pasandole dos parámetros?
+
+1 --- Solicitar el minímo
+2 --- Solicitar el maximo
+3 --- Mostrar el número
+
+let min = parseInt(prompt('Ingrese el minimo'));
+let max = parseInt(prompt('Ingrese el max'));
+let random =  Math.round( Math.random() * (max - min) + min);
+console.log(random);
+
+---- Más ejemplos ---
+En clase
+
+
+¿Cómo podemos validar si un valor ingresado es un número o no?
+
+let numero = parseInt(Prompt("Ingresa un numero"))
+
+if (! isNaN(numero)){               //Al negar la condición isNaN nos va a retornar true si es un número y va a imprimir por consola
+    console.log("Es un número)
+}
+
+Ciclo wo-while
+Se ejecuta minimo una vez, y luego valida. Si se cumple la condición vuelve a repetir, sino no.
+
+Ciclo while
+Si no se cumple la condicón directamente no hace la acción.

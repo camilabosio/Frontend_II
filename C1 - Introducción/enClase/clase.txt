@@ -1,3 +1,5 @@
+Clase 01 --- Introducción
+
 En esta materia vamos a aprender a volver interactivas nuestras páginas webs
 Nos vamos a centrar en lenguaje de JavaScript
 
@@ -29,3 +31,4 @@ con typeOff podemos ver que tipo de dato hay almacenado en una varibale
 
 Condicionales ==> If, while, etc.
 Ciclos ==> for
+
