@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Uchen&display=swap');
+
+.container {
+    font-family: 'Uchen', serif;
+    /*Centrar el texto*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.importante {
+    color: red;
+}

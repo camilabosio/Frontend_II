@@ -1,0 +1,22 @@
+Clase 04 --- Introducción al DOM
+
+¿Cuál es la diferencia entre el objeto window y document?
+
+El window representa la parte gráfica de la ventana y el documento al contenido de esa ventana.
+
+Window tiene un montón de propiedades con las que podemos acceder a lo que sería la ventana. 
+ejemplo ===> window.heigth
+
+Selectoers del DOM 
+
+document.querySelector('h1') ==> selecciono el primer elemento H1 del documento.
+
+document.querySelectorAll('p') ==> Obtengo todos los elementos con la etiqueta P en forma de NodeList.
+
+document.querySelectorAll('p.importante') ==> Selecciona el elemento P con clase.
+
+document.querySelector('#texto') ==> Selecciona el elemento P con ID.
+
+document.querySelector('input').value ==> Leo el valor que tiene input.
+
+método textContent ==> Muestra el texto del elemento seleccionado 
