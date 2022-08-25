@@ -1,10 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Uchen&display=swap');
-
-.container {
-    font-family: 'Uchen', serif;
-    /*Centrar el texto*/
+.header {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 30vh;
+    color: rosybrown
+}
+
+.container {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card {
+    border: 1px solid black;
+    width: 200px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.active {
+    box-shadow: 2px 2px 5px violet;
+}
+
+/* Modo dark */
+.dark .header {
+    background-color: grey;
+    color: aliceblue;
+}
+
+.dark .container {
+    background-color: gray;
+    color: aliceblue;
 }

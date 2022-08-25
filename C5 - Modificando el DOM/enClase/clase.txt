@@ -1,1 +1,21 @@
 Clase 05 --- Modificando el DOM
+
+.innerHTML ==> Podemos crear etiquetas de texto y modificar el contenido de una etiqueta. 
+
+.innerText ==> Obtenemos el texto de lo que seleccionamos.
+.innerText = "Cambiando el valor" ==> Podemos obtener el texto y cambiar el contenido. 
+
+
+Propiedad style
+contenedor.style.backgroundColor = 'blue'; 
+
+Modificar clase 
+
+Agregar una clase a un elemento HTML
+let seleccionado = document.getElementById('id');
+seleccionado.classList.add('claseAgregada')
+
+Quitar una clase a todos los elementos y agregarla por ID
+
+let activos = document.querySelectorAll('.active)
+activos[0].classList.remove('active')
