@@ -1,0 +1,11 @@
+Clase 07 --- Repaso e integración a eventos. 
+
+Siempre vinculamos el JS abajo del documento, para que cargue siempre el HTML y luego modificar con JS.
+
+Ejercitación de crear card con imagenes dadas por el usuario
+Todo hecho desde JS. 
+
+Card creada con función crearCard
+Luego usamos un for para pedir la URL y llamamos a la función. 
+
+Cambiar styles desde JS puede hacerse, pero siempre es mejor hacerlo desde la hoja de estilos. 
