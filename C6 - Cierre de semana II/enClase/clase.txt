@@ -1,0 +1,31 @@
+Clase 06 --- Modificando el DOM con hasAttribute(), getAttribute(), removeAttribute() y setAttribute()
+
+Cread elementos desde JS
+document.createElement('h1') ==> lo crea pero no está visible
+createTextNode ==> Agrega un nodo de tipo texto en el objeto creado. 
+document.querySelector('.header').appendChild(document.createElement('h2'))==> Crea un hijo del tipo nodo al header
+
+
+PASOS PARA MODIFICAR EL DOM:
+1. Crear el nodo.
+2. Seleccionar el padre
+3. Agregar el nodo al padre
+
+let titulo = document.createElement('h2');
+titulo.innerText = 'un texto desde JS';
+
+let header = document.querySelector('.header');
+header.appendChild( titulo );
+
+Siempre se recomienda seleccionar y guardar los elementos al princio.
+Luego podemos modificar esas variables con los métodos.
+
+Crear un div desde JS
+let card = document.createElement('div');
+let titulo = document.createElement('h2');
+
+
+Agregar atributos desde JS
+setAttribute
+
+

@@ -35,8 +35,14 @@ cambiarTema.addEventListener("click", alternarColorTema);
 
 function obtenerDatosDelUsuario() {
   /* --------------- PUNTO 1: Escribe tu codigo a partir de aqui --------------- */
- 
+  datosPersona.nombre = prompt("Hola! ¿Cómo te llamas?");
 
+  let cuentaEdad = parseInt(prompt("¿En qué año naciste?"))
+  datosPersona.edad = 2022 - cuentaEdad 
+
+  datosPersona.ciudad = prompt("¿En dónde vivís?")
+
+  datosPersona.interesPorJs = confirm("Te interesa JavaScript?") ? "Si, me interesa" : "No por ahora";
 
 }
 
@@ -44,27 +50,37 @@ function renderizarDatosUsuario() {
   /* ------------------- NO TOCAR NI ELIMINAR ESTA FUNCION. ------------------- */
   obtenerDatosDelUsuario();
   /* --------------- PUNTO 2: Escribe tu codigo a partir de aqui --------------- */
-  
-
-
+  document.getElementById("nombre").innerText = datosPersona.nombre;
+  document.getElementById("edad").innerText = datosPersona.edad;
+  document.getElementById("ciudad").innerText = datosPersona.ciudad;
+  document.getElementById("javascript").innerText = datosPersona.interesPorJs;
 }
 
 
 function recorrerListadoYRenderizarTarjetas() {
   /* ------------------ PUNTO 3: Escribe tu codigo desde aqui ------------------ */
-  
-
-
+  const contenedor = document.getElementById("fila")
+  for (let i = 0; i < listado.length; i ++){
+    let card = ` <div class = 'caja'>
+        <img src=${listado[i].imgUrl} alt = ${listado[i].lenguajes}>
+        <p class="lenguajes">${listado[i].lenguajes} </p>
+        <p class="bimestre">${listado[i].bimestre} </p>
+      </div>
+      `
+    contenedor.innerHTML += card;
+  }
+  materiasBtn.removeEventListener("click", recorrerListadoYRenderizarTarjetas)
 }
 
 function alternarColorTema() {
   /* --------------------- PUNTO 4: Escribe tu codigo aqui --------------------- */
- 
-  
-
-
+ document.querySelector('#sitio').classList.toggle('dark');
 }
 
 /* --------------------- PUNTO 5: Escribe tu codigo aqui --------------------- */
-document.addEventListener
+document.addEventListener("keydown", (Event) => {
+  if(Event.key == "F"){
+    document.getElementById("sobre-mi").classList.remove("oculto");
+  }
+})
 
