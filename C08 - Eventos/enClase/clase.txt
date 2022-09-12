@@ -1,0 +1,17 @@
+Clase 08 --- Introducción a eventos. 
+
+Tenemos un método que hace que el JS sólo se implemente una vez que el HTML se cargó.
+window.onload 
+
+Pasos para crear un eventos
+1 --- Seleccionar el elemento a observar
+2 --- Seleccionar a que evento reaccionará
+3 --- Ejecutar una función 
+
+Seleccionar un elemento ==> querySelectorAll
+this ==> nos hace referencia al elemento sobre el cual estamos actuando. Podemos trabajar en él cuando lo pescamos.
+    this.classList.add('active')
+
+
+
+
