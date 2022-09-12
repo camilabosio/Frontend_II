@@ -1,2 +1,5 @@
 C16 --- Introducción a asincronismo
 
+Hacemos un banco implementando promesas
+Una promesa es un objeto que devuelve dos valores: uno para el caso que funciona, y otro para el fallo.
+La promesa puede cumpliser (resolve) o puede fallar (reject)
