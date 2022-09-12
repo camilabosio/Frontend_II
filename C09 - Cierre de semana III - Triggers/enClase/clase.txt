@@ -1,3 +1,20 @@
-Practica Kahoot - Repaso de eventos
+Practica Kahoot - Repaso de eventos.
 
-Ciclo for each ==> 
+Creamos una galería de imagenes y seguimos integrando eventos. 
+
+Primero la creación de card ==> Usamos template string .
+Luego renderizamos esas cards ==> forEach 
+
+Validación de clases, en este caso validamos si el valor de like del gatito es verdadero, y creamos una clase en caso de sí.
+
+let claseDinamica;
+
+if( gatitlo.like = true){
+    claseDinamica = 'like'
+}else {
+    claseDinamica = '';
+    }
+
+Otra forma de utilizar el if en JS podría ser 
+
+gatito.like ? 'like' : ''
